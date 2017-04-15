@@ -27,7 +27,7 @@ def get_ip_address(platform=system_name):
 #get ipaddress by network name
 import socket
 import struct
-def get_ip_address_by_network():
+def get_ip_address_by_network(network_name):
 	import fcntl
 	s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 	return socket.inet_ntoa(fcntl.ioctl(
